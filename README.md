@@ -4,6 +4,10 @@ We argue that, given any two unique words in $\\{0,1\\}^n$, there exists a finit
 
 _For a good primer of the separating words problem, see [Remarks on Separating Words](http://web.mit.edu/dwilson/www/papers/desw.pdf)_
 
+As far as I can tell, a [recent proof](https://link.springer.com/chapter/10.1007/978-3-031-07469-1_13) suggests a logarithmic lower bound. 
+
+I believe the [state of the art](http://people.maths.ox.ac.uk/~chase/swtr.pdf) is that there exists a separating DFA with ~${O}(n^{1/3})$ states.
+
 ### Approach
 We show that, as $n\rightarrow\infty$, the probability approaches 1 that all pairs of (different) words can be separated by a machine of size $m = log_{2}(n)$.
 
