@@ -145,7 +145,7 @@ By similar logic, since $m^m$ grows much faster than $4^m$, as $n\rightarrow\inf
 
 #### A note on the probability's rate of increase
 
-Moreover, holding $n = 2^m$ constant but otherwise increasing the state machine size by 1 (to $m+1$), we see that the probability of NOT separation more than halves. This strengthens the argument that the expected solution size is $O(log(n))$:
+Moreover, holding $n = 2^m$ constant but otherwise increasing the state machine size by 1 (to $m+1$), we see that the probability of NOT separation more than halves for sufficiently large $m$. This strengthens the argument that the expected solution size is $O(log(n))$:
 
 $$
 \begin{align}
