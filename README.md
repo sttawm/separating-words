@@ -12,13 +12,13 @@ A [recent proof](https://link.springer.com/chapter/10.1007/978-3-031-07469-1_13)
 The [state of the art](http://people.maths.ox.ac.uk/~chase/swtr.pdf) is that there exists a separating DFA with ~${O}(n^{1/3})$ states.
 
 ### Our approach
-We show that, as $n\rightarrow\infty$, the probability approaches 1 that, for any pair of unique words, they can be separated by a machine of size $m = \log_{2} n$.
+We show that, as $n\rightarrow\infty$, the probability approaches 1 that, for any pair words $(a, b)$ such that $a \neq b$, they can be separated by a machine of size $m = \log_{2} n$.
 
 Moreover, we show that, for large m, the converse probability is more than halved each time the number of states increases by 1.
 
 ### The probability
 
-Let's define the probability $P(n, m)$ that, for all pairs of strings $(a, b)\text{, }a!=b$ of length $n$, there exists a machine with $m$ states that separates them.
+Let's define the probability $P(n, m)$ that, for all pairs of strings $(a, b)\text{, }a \neq b$ of length $n$, there exists a machine with $m$ states that separates them.
 
 This is equivalent to:
 
