@@ -64,7 +64,7 @@ Given a random pair of strings of length $n$, the probability that their final d
 
 The probability that they differ in the $n^{th}$ position but are not separated is the probability that both transitions go to the same state: $\frac{1}{m}$.
 
-Given that their final difference is in the $(n-1)^{th}$ position, the probability they are not separated is $1 - p(\text{they stay separate at each transition}) = (\frac{m-1}{m})^2$ (because if they were to transition to the same state, they'd stick together until the end since there are no more differences).
+Given that their final difference is in the $(n-1)^{th}$ position, the probability they are not separated is $1 - p(\text{they stay separate at each transition}) = 1 - (\frac{m-1}{m})^2$ (because if they were to transition to the same state, they'd stick together until the end since there are no more differences).
 
 Similarly, given that their final difference is in the $(n-d)^{th}$ position, the probability they are not separated is $1 - (\frac{m-1}{m})^d$
 
