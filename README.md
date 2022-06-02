@@ -149,13 +149,13 @@ Moreover, holding $n = 2^m$ constant but otherwise increasing the state machine 
 
 $$
 \begin{align}
-P(n = 2^m, m + 1) =& 1 - 2^{4^m} * (\frac{2}{m+1})^{({m+1})^{m+1}} \\
-                  >& 1 - 2^{4^m} * (\frac{2}{m})^{m^{m+1}} \\
-                  =& 1 - 2^{4^m} * (\frac{2}{m})^{m^{m} * m} \\
-                  =& 1 - 2^{4^m} * [(\frac{2}{m})^{m^{m}}]^m \\
-                  =& 1 - 2^{4^m} * (\frac{2}{m})^{m^{m}} * [(\frac{2}{m})^{m^{m}}]^{m-1} \\
-                  =& 1 - (1 - P(n = 2^m, m)) * [(\frac{2}{m})^{m^{m}}]^{m-1} \\
-                  >& 1 - (1 - P(n = 2^m, m)) * \frac{1}{2} \\      
+1 - P(n = 2^m, m + 1) =& 2^{4^m} * (\frac{2}{m+1})^{({m+1})^{m+1}} \\
+                  <& 2^{4^m} * (\frac{2}{m})^{m^{m+1}} \\
+                  =& 2^{4^m} * (\frac{2}{m})^{m^{m} * m} \\
+                  =& 2^{4^m} * [(\frac{2}{m})^{m^{m}}]^m \\
+                  =& 2^{4^m} * (\frac{2}{m})^{m^{m}} * [(\frac{2}{m})^{m^{m}}]^{m-1} \\
+                  =& P(n = 2^m, m) * [(\frac{2}{m})^{m^{m}}]^{m-1} \\
+                  <& P(n = 2^m, m) * \frac{1}{2} \\      
 \end{align}
 $$
 
