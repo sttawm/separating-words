@@ -26,7 +26,7 @@ $$
 \begin{align}
 P(n,m) &= p(\text{a random pair CAN be separated})^{(\text{number of pairs of strings})} \\
        &= [1 - p(\text{a random pair CAN'T be separated})]^{(\text{number of pairs of strings})} \\
-       &= [1 - p(\text{a randomly selected machine doesn't separate a random pair})^{(\text{number of machines})}]^{(\text{number of pairs of strings})} \\
+       &= [1 - p(\text{a randomly selected machine does not separate a random pair})^{(\text{number of machines})}]^{(\text{number of pairs of strings})} \\
 \end{align}       
 $$
 
