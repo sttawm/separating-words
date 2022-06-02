@@ -134,7 +134,7 @@ Then, the probability function becomes:
 
 
 $$
-(1 - \frac{2}{m}^{m^m})^{2^{2*{2^m}}} 
+(1 - (\frac{2}{m})^{m^m})^{2^{2*{2^m}}} 
 $$
 
 Now, by the above lemma, since for large $m$, $2^{4^m} * (\frac{2}{m})^{m^m} < 1$, we get the following lower bound on the probability:
