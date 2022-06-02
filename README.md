@@ -1,13 +1,15 @@
 # A proof on the separating words problem
 
-We argue that, given any two unique words in $\\{0,1\\}^n$, there exists a finite state machine with $m = O(log(n))$ states that separates them.
+We argue that, given any two unique words in $\\{0,1\\}^n$, there exists a finite state machine with $m = O(log n)$ states that separates them. 
+
+If accurate, this proof would close this open problem.
 
 _For a good primer of the separating words problem, see [Remarks on Separating Words](http://web.mit.edu/dwilson/www/papers/desw.pdf)_
 
 ### Prior work
-As far as I can tell, a [recent proof](https://link.springer.com/chapter/10.1007/978-3-031-07469-1_13) suggests a logarithmic lower bound. 
+A [recent proof](https://link.springer.com/chapter/10.1007/978-3-031-07469-1_13) suggests a logarithmic lower bound (suggesting this upper bound is optimal).
 
-I believe the [state of the art](http://people.maths.ox.ac.uk/~chase/swtr.pdf) is that there exists a separating DFA with ~${O}(n^{1/3})$ states.
+The [state of the art](http://people.maths.ox.ac.uk/~chase/swtr.pdf) is that there exists a separating DFA with ~${O}(n^{1/3})$ states.
 
 ### Our approach
 We show that, as $n\rightarrow\infty$, the probability approaches 1 that, for any pair of unique words, they can be separated by a machine of size $m = log_{2}(n)$.
