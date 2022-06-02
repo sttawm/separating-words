@@ -94,7 +94,7 @@ $$
 \end{align}
 $$
 
-Factoring out the $\frac{1}{m}$, we get $\frac{1}{m} * \displaystyle\sum_{i=1} ^{n} \frac{i}{2^i}$, and the summation can be bounded above by 2 (see [here]([url](https://www.quora.com/How-do-you-evaluate-the-sum-of-n-2-n-from-n-1-to-infinity))). So, our final upper bound here is:
+Factoring out the $\frac{1}{m}$, we get $\frac{1}{m} * \displaystyle\sum_{i=1} ^{n} \frac{i}{2^i}$, and the summation can be bounded above by 2 (see [here](https://www.quora.com/How-do-you-evaluate-the-sum-of-n-2-n-from-n-1-to-infinity)). So, our final upper bound here is:
 
 $$
 S < \frac{2}{m}
