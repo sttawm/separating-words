@@ -127,15 +127,35 @@ We're going to work with a bound on the binomial expansion. But first, a little 
 #### A lemma
 If $KX<1$, then $(1 - X)^K < 1 - KX$
 
-Consider adjacent terms in the binomial expansion:
+#### Proof of lemma
+Consider adjacent terms in the binomial expansion $t_0 - t_1 + t_2 + t_3 - ...$:
 
 $$
 1 - K * X + {K \choose 2} * X^2 - {K \choose 3} * X^3 ...
 $$
 
-Because, for $i > 1$, ${K \choose i} < K^i$, each term for $i > 1$ is less than $K^i * X^i = (K * X)^i$. Then, since $K * X < 1$, each subsequent term (ignoring the sign) is less than the previous term.
+For $i > 1$, 
 
-Now, since the signs alternate, $1 - KX$ is a lower bound (and, with 3 terms, it becomes an upper bound, with 4 terms again lower, alternating etc.)
+$$
+\begin{align}
+{K \choose i} &= {K \choose {i-1}} * \frac{K-i}{i} \\
+              &< {K \choose {i-1}} * K \\
+\end{align}
+$$
+
+which implies that: 
+
+$$
+\begin{align}
+t_{i} &= t_{i-1} * \frac{K-i}{i} * X \\
+      &< t_{i-1} * K * X \\
+      &< t_{i-1} * 1 \\
+\end{align}      
+$$
+
+That is, each subsequent term (ignoring the sign) is less than the previous term.
+
+Then, since the signs of terms alternate, $1 - KX$ is a lower bound (because the rest of the expansion can be thought of as adding pairs $(t_i,t_{i+1})$ such that $t_i-t_{i+1} > 0$, and if there are an odd number of terms left, the final "pair" consists only of an addition).
 
 #### Using the lemma
 
