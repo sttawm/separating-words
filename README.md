@@ -16,7 +16,7 @@ Moreover, we show that, for large m, the converse probability is more than halve
 
 ### The probability
 
-Let's define the probability $P(n, m)$ that, for all pairs of unique strings of length $n$, there exists a machine with $m$ states that separates them.
+Let's define the probability $P(n, m)$ that, for all pairs of strings $(a, b)\text{, }a!=b$ of length $n$, there exists a machine with $m$ states that separates them.
 
 This is equivalent to:
 
