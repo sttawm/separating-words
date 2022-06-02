@@ -131,16 +131,14 @@ Now, let $n$ and $m$ be exponentially related, such that $m = 2^n$, i.e. $m = lo
 
 Then, the probability function becomes:
 
-
-
 $$
-(1 - (\frac{2}{m})^{m^m})^{2^{2*{2^m}}} 
+P(n = 2^m, m) > (1 - (\frac{2}{m})^{m^m})^{2^{2*{2^m}}} 
 $$
 
 Now, by the above lemma, since for large $m$, $2^{4^m} * (\frac{2}{m})^{m^m} < 1$, we get the following lower bound on the probability:
 
 $$
-1 - 2^{4^m} * (\frac{2}{m})^{m^m}
+P(n = 2^m, m) > 1 - 2^{4^m} * (\frac{2}{m})^{m^m}
 $$
 
 By similar logic, since $m^m$ grows much faster than $4^m$, as $n\rightarrow\infty$, so too does $m$, and the probability approaches $1$.
