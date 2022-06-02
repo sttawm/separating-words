@@ -53,7 +53,9 @@ How many DFAs are there with m states?
 
 Consider an m-state DFA with states $s_1, s_2, ... s_m$. Each state has $2$ transitions. That's $2m$ transitions. And each transition has $m$ places it can go. So, that makes $m^{2m}$ unique transition functions. The start state can be any one of $m$ states, so that gives $m^{2m+1}$.
 
-For the sake of simplicity, we will use the lower bound **$M > m^m$**
+If we want to work with unique DFAs, then we should account for those that are isomorphic to each other. Since there are $m!$ ways to order the states, we can divide by $m!$ to get the number of unique DFAs: $\frac{m^{2m+1}}{m!}$.
+
+For the sake of simplicity, since $m! < m^m$, we will use the lower bound **$M > m^m$**
 
 ### N := The number of pairs of unique strings of length n
 There are $2^n$ strings of length n, so there are $(2^n)^2 = 2^{2n}$ pairs of strings. But, $2^n$ of those combos are $(a, b) \text{ such that } a = b$. 
