@@ -1,6 +1,6 @@
 # A proof on the separating words problem
 
-We argue that, given any two unique words in $\\{0,1\\}^n$, there exists a finite state machine with $m = O(log n)$ states that separates them. 
+We argue that, given any two unique words in $\\{0,1\\}^n$, there exists a finite state machine with $m = O(\log n)$ states that separates them. 
 
 If accurate, this proof would close this open problem.
 
@@ -12,7 +12,7 @@ A [recent proof](https://link.springer.com/chapter/10.1007/978-3-031-07469-1_13)
 The [state of the art](http://people.maths.ox.ac.uk/~chase/swtr.pdf) is that there exists a separating DFA with ~${O}(n^{1/3})$ states.
 
 ### Our approach
-We show that, as $n\rightarrow\infty$, the probability approaches 1 that, for any pair of unique words, they can be separated by a machine of size $m = log_{2}(n)$.
+We show that, as $n\rightarrow\infty$, the probability approaches 1 that, for any pair of unique words, they can be separated by a machine of size $m = \log_{2} n$.
 
 Moreover, we show that, for large m, the converse probability is more than halved each time the number of states increases by 1.
 
@@ -109,7 +109,7 @@ $$
 P(n,m) > (1 - (\frac{2}{m})^{m^m})^{2^{2n}} 
 $$
 
-Now, using this lower bound on $P(n,m)$, we demonstrate that the expected DFA solution size, in terms of states, is $m = O(log(n))$
+Now, using this lower bound on $P(n,m)$, we demonstrate that the expected DFA solution size, in terms of states, is $m = O(\log n)$
 
 ### A logarithmic DFA solution size
 We're going to work with a bound on the binomial expansion. But first, a little lemma:
@@ -129,7 +129,7 @@ Now, since the signs alternate, $1 - KX$ is a lower bound (and, with 3 terms, it
 
 #### Using the lemma
 
-Now, let $n$ and $m$ be exponentially related, such that $m = 2^n$, i.e. $m = log_2(n)$
+Now, let $n$ and $m$ be exponentially related, such that $m = 2^n$, i.e. $m = \log_2 n$
 
 Then, the probability function becomes:
 
@@ -147,7 +147,7 @@ By similar logic, since $m^m$ grows much faster than $4^m$, as $n\rightarrow\inf
 
 #### A note on the probability's rate of increase
 
-Moreover, holding $n = 2^m$ constant but otherwise increasing the state machine size by 1 (to $m+1$), we see that the probability of NOT separation more than halves for sufficiently large $m$. This strengthens the argument that the expected solution size is $O(log(n))$:
+Moreover, holding $n = 2^m$ constant but otherwise increasing the state machine size by 1 (to $m+1$), we see that the probability of NOT separation more than halves for sufficiently large $m$. This strengthens the argument that the expected solution size is $O(\log n)$:
 
 $$
 \begin{align}
