@@ -80,6 +80,9 @@ Given that their final difference is in the $(n-1)^{th}$ position, the probabili
 
 Similarly, given that their final difference is in the $(n-d)^{th}$ position, the probability they are not separated is $1 - (\frac{m-1}{m})^d$
 
+##### *An inlined footnote:
+> (Actually, $\frac{m-1}{m}$ is a lower bound on the probability that the strings stay separate for a given transition. Because, knowing that the two strings have stayed separate for any two states and any two transitions, we are sampling with replacement, and there's a small chance that we see that situation again. Underestimating that probability is fine since it yields us an upper bound on the probability that the strings are not separated.)
+
 Putting this together, $S$ is:
 
 $$
