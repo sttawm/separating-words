@@ -11,7 +11,7 @@ I believe the [state of the art](http://people.maths.ox.ac.uk/~chase/swtr.pdf) i
 ### Approach
 We show that, as $n\rightarrow\infty$, the probability approaches 1 that, for any pair of unique words, they can be separated by a machine of size $m = log_{2}(n)$.
 
-Moreover, we show that the converse probability is more than halved when the number of states becomes m + 1.
+Moreover, we show that, for large m, the converse probability is more than halved each time the number of states increases by 1.
 
 ### The probability
 
