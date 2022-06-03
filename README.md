@@ -81,7 +81,7 @@ Given that their final difference is in the $(n-1)^{th}$ position, the probabili
 Similarly, given that their final difference is in the $(n-d)^{th}$ position, the probability they are not separated is $1 - (\frac{m-1}{m})^d$
 
 ##### An inlined footnote:
-> (Actually, $\frac{m-1}{m}$ is a lower bound on the probability that the strings stay separate for a given transition. Because, knowing that the two strings have stayed separate when transitioning on digit $d_i$, we later sample transitions with replacement, i.e. there's a small chance that we see that exact transition again for later digits $d_{j > i}$, thus slightly increasing the probability of separation for beyond the naive $\frac{m-1}{m}$. However, underestimating the actual probability by instead using $\frac{m-1}{m}$ is fine since it yields us an upper bound on the probability that the strings are not separated.)
+> (Actually, $\frac{m-1}{m}$ is a lower bound on the probability that the strings stay separate for a given transition. Because, knowing that the two strings have stayed separate when transitioning on digit $d_i$, we later sample transitions with replacement, i.e. there's a small chance that we see that exact transition again for later digits $d_{j > i}$, thus slightly increasing the probability of separation beyond the naive $\frac{m-1}{m}$. However, underestimating the actual probability by instead using $\frac{m-1}{m}$ is fine since it yields us an upper bound on the probability that the strings are not separated.)
 
 Putting this together, $S$ is:
 
