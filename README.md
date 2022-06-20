@@ -9,7 +9,7 @@ _For a good primer of the separating words problem, see [Remarks on Separating W
 ### Prior work
 A [recent proof](https://link.springer.com/chapter/10.1007/978-3-031-07469-1_13) suggests a logarithmic lower bound (suggesting this upper bound is optimal).
 
-The [state of the art](http://people.maths.ox.ac.uk/~chase/swtr.pdf) is that there exists a separating DFA with ~${O}(n^{1/3})$ states.
+The [state of the art](http://people.maths.ox.ac.uk/~chase/swtr.pdf) is that there exists a separating DFA with ${Õ}(n^{1/3})$ states.
 
 ### Our approach
 We show that, as $n\rightarrow\infty$, the probability approaches 1 that, for any pair words $(a, b)$ such that $a \neq b$, they can be separated by a machine of size $m = \log_{2} n$.
